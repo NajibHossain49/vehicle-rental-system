@@ -1,6 +1,7 @@
 import type { Request, Response } from "express";
 import express from "express";
 import authRoutes from "./modules/auth/auth.routes";
+import bookingRoutes from "./modules/bookings/booking.routes";
 import userRoutes from "./modules/users/user.routes";
 import vehicleRoutes from "./modules/vehicles/vehicle.routes";
 import { globalErrorHandler } from "./utils/errorHandler";
@@ -13,6 +14,7 @@ app.use(express.json());
 app.use("/api/v1/auth", authRoutes);
 app.use("/api/v1/vehicles", vehicleRoutes);
 app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/bookings", bookingRoutes);
 
 app.get("/api/v1/health", (req: Request, res: Response) => {
   res.status(200).json({
