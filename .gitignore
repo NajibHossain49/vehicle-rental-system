@@ -1,0 +1,74 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# Diagnostic reports (https://nodejs.org/api/report.html)
+.report/
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.etag
+.cache/
+
+# Directory for instrumented libs/apps
+coverage
+*.nyc_output
+.nyc_output
+
+# Code coverage
+.coverage
+coverage.xml
+
+# dist/
+dist/
+build/
+*.tsbuildinfo
+
+# Dependency directories
+node_modules/
+jspm_packages/
+
+# dotenv environment variables file
+.env
+.env.development.local
+.env.test.local
+.env.production.local
+.env.local
+
+# Editor directories and files
+.idea
+.vscode
+*.sublime-project
+*.sublime-workspace
+
+# OSX
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Thumbnails
+._*
+
+# Files that might be created by the OS
+.Spotlight-V100
+.Trashes
+
+# Vagrant files
+.vagrant
+
+# Local .pki (public key infrastructure) directory
+.pki/
+
+# Temporary files
+*~
+.#*
+.fuse_hidden*
+.nfs*
+.vercel
+.env*.local
