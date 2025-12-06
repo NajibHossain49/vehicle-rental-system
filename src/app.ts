@@ -16,7 +16,7 @@ app.use("/api/v1/vehicles", vehicleRoutes);
 app.use("/api/v1/users", userRoutes);
 app.use("/api/v1/bookings", bookingRoutes);
 
-app.get("/api/v1/health", (req: Request, res: Response) => {
+app.get("/", (req: Request, res: Response) => {
   res.status(200).json({
     success: true,
     message: "Vehicle Rental System API is running perfectly",
